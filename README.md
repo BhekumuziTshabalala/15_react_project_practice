@@ -1,4 +1,4 @@
-# Project Name
+# 15 React Projects
 
 This is a repo with 15 projects made in React to help me better understand the framework. A YouTube video inspired this. I coded from scratch
 
