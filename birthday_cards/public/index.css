@@ -1,0 +1,8 @@
+.body{
+    background-color: rgb(29, 129, 160);
+    width: 98vw;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
