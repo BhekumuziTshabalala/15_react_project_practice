@@ -1,0 +1,21 @@
+.cards{
+    display: flex;
+    gap :2rem;
+    flex-wrap: wrap;
+    padding:  50px;
+    
+    
+}
+
+#text{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 60px;
+    color: rgb(19, 22, 22);
+    text-decoration-line: underline;
+    text-decoration-color: rgb(26, 255, 0);
+    text-underline-offset: 8px;
+     /* text-underline-position: ;  */
+} 
+
+

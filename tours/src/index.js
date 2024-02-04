@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from './app.js'
+import App from './app'
 
 const apiUrl = "https://course-api.com/react-tours-project";
 
