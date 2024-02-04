@@ -1,25 +1,41 @@
 
-.cards{
-    display: flex;
-    gap :2rem;
-    flex-wrap: wrap;
-    padding:  50px;
-   
-    
-}
+
 .card{
     position: relative;
     display: flex;
     flex-direction: column;
     width:20rem;
+    border-radius: 1vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     
+}
+#name{
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+
+#showMore{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: blue;
+}
+
+#info{
+    padding : 0px 10px 0px 10px;
 }
 #image{
     width: 20rem;
     height: 20rem;
     border-radius: 1vh;
+}
 
-    
+#remove{
+    padding: 5px;
+    margin: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
 }
 
 #price{
@@ -27,27 +43,12 @@
     top: 0;
     right: 0;
     margin :0;
-    padding: 5px;
+    padding: 10px;
     border-radius: 0vh 1vh 0vh 0vh;
     background-color: rgba(0,0,0,0.5);
     color: white;
     text-align: center;
     }
 
-#text{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 60px;
-    color: rgb(19, 22, 22);
-    text-decoration-line: underline;
-    text-decoration-color: rgb(26, 255, 0);
-    text-underline-offset: 8px;
-    /* text-underline-position: ; */
-    
-}
 
-hr {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-  }
+

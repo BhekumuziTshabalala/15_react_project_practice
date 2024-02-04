@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
+import './app.css'
 import Loading from "./components/loading";
 import Tours from "./components/tours";
 
@@ -9,8 +10,13 @@ export default function App(){
     const [loading,setLoading] = useState(true);
     const [tours,setTours] = useState([])
 
-    const fetchTours = async  ()=>{
+    const removeTour = (id) => {
+        const newTours = tours.filter((tour) => tour.id !== id );
+        setTours(newTours);
 
+    }
+
+    const fetchTours = async  ()=>{
         try{
             const result = await fetch(apiUrl);
             const tours = await result.json();
@@ -27,12 +33,22 @@ export default function App(){
         fetchTours();
     })
     
+
     if (loading){
         return (<main><Loading/> </main>)
-    }else{
-        return (<main>
-            <Tours tours={tours}/>
-        </main>)
+    }else{  
+        return (
+            <main>
+                <h1 id="text">Our Tours</h1>
+                <div className="cards">
+                {
+                    tours.map((tour) => {
+                        return(<Tours tour ={tour} removeTour={removeTour}/>) 
+                    })
+                }
+                </div> 
+            </main>
+            )
     }
 
 
