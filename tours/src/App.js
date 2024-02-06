@@ -13,6 +13,7 @@ export default function App(){
     const removeTour = (id) => {
         const newTours = tours.filter((tour) => tour.id !== id );
         setTours(newTours);
+      
 
     }
 
@@ -31,7 +32,7 @@ export default function App(){
 
     useEffect(() =>{
         fetchTours();
-    })
+    },[])
     
 
     if (loading){
@@ -39,7 +40,7 @@ export default function App(){
     }else{  
         return (
             <main>
-                <h1 id="text">Our Tours</h1>
+                <h1 className="text">Our Tours</h1>
                 <div className="cards">
                 {
                     tours.map((tour) => {
@@ -48,7 +49,7 @@ export default function App(){
                 }
                 </div> 
             </main>
-            )
+        )
     }
 
 
